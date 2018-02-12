@@ -1,0 +1,14 @@
+/* pages/help/help.wxss */
+  @import "../common/iconfont"; 
+ @import "../common/font-awesome";
+.help {
+  font-size: 16px;
+}
+
+.icon-my:before { content: "\e88f"; } /*iconfont*/
+
+.icon-iconsy1:before { content: "\e639"; } /*iconfont*/
+
+.block {
+  display: block;
+}

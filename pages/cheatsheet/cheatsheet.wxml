@@ -1,0 +1,8 @@
+<!--pages/help/help.wxml-->
+<view class='help'>
+<text>阿里 iconfont 使用方式(共三种)：</text>
+<text class='iconfont icon-my block'>  unicode：每增加一个icon都需要在线生成一个 @font-tace；</text>
+<text class='fa fa-camera-retro'>  fontawesome：详细见相应wxss</text>
+<text class='block'>fontawesome 先转换字体后下载，每种ttf字体都对应一种css文件</text>
+<text>{{name}}</text>
+</view>
