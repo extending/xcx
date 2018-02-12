@@ -5,7 +5,11 @@ Page({
    * 页面的初始数据
    */
   data: {
-    name: "xiaoming"
+    name: "lvyao",
+    courses: [
+      { item: 'math', teacher: 'Li', time: 'am' },
+      { item: 'chinese', teacher: 'Zhang', time: 'pm'},
+    ]
   },
 
   /**
@@ -47,7 +51,7 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-    console.log(/onPullDownRefresh/)
+    console.log(this)
   },
 
   /**
@@ -61,6 +65,12 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-    console.log(1+2)
+    console.log(1 + 2)
+  },
+  changeName: function (e) {
+    console.log(getCurrentPages())
+    this.setData({
+      name: "xiaoming",
+    })
   }
 })
