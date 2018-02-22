@@ -5,18 +5,19 @@
 <text class='iconfont icon-my block'>  unicode：每增加一个icon都需要在线生成一个 @font-tace；</text>
 <text class='fa fa-camera-retro'>  fontawesome：详细见相应wxss</text>
 <text class='block'>fontawesome 先转换字体后下载，每种ttf字体都对应一种css文件</text>
-<text bindtap='changeName'>{{name}}</text>
+<text bind:tap='changeName'>{{name}}</text>
 <view wx:for="{{courses}}" wx:key="{{item}}">
   <text wx:if="{{item.time == 'am'}}" class="block">teacher: {{item.teacher}}</text>
 </view>
 <template is="even" />
+<map class="map" bind:hidden='false' longitude="22" latitude="114"></map>
 </view>
 
 <template name="even">
-  <view> even </view>
+  <view>template: even </view>
 </template>
 
 <template name="odd">
-  <view> odd </view>
+  <view>template: odd </view>
 </template>
 

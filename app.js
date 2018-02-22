@@ -35,5 +35,8 @@ App({
   },
   globalData: {
     userInfo: null
+  },
+  onHide: function () {
+    console.log(/hide/)
   }
 })

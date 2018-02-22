@@ -1,3 +1,5 @@
 {
-  "navigationBarTitleText": "cheatsheat"
+  "navigationBarTitleText": "cheatsheat",
+  "navigationBarTextStyle": "white",
+  "navigationBarBackgroundColor": "#000000"
 }

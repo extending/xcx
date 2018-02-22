@@ -12,3 +12,8 @@
 .block {
   display: block;
 }
+.map {
+  width: 100%;
+  height: 600rpx;
+  margin: 40rpx 0;
+}

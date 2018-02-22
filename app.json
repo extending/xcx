@@ -1,8 +1,8 @@
 {
   "pages": [
+    "pages/cheatsheet/cheatsheet",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/cheatsheet/cheatsheet",
     "pages/user/user"
   ],
   "window": {

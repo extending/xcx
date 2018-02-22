@@ -51,7 +51,7 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-    console.log(this)
+    console.log(/down/)
   },
 
   /**
@@ -65,12 +65,19 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-    console.log(1 + 2)
+    let obj = {
+      title: '怪你过分美丽',
+      path: ""
+    };
+    return obj;
   },
   changeName: function (e) {
-    console.log(getCurrentPages())
+    console.log(/getCurrentPages/, getCurrentPages());
+    console.log(/e/, e)
     this.setData({
       name: "xiaoming",
+    }, function() {
+      console.log(/cb/)
     })
   }
 })
