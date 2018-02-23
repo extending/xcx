@@ -22,12 +22,6 @@
         "selectedIconPath": "pages/common/home-actived.png"
       },
       {
-        "text": "日志",
-        "pagePath": "pages/logs/logs",
-        "iconPath": "pages/common/cheat.png",
-        "selectedIconPath": "pages/common/cheat-actived.png"
-      },
-      {
         "text": "备忘",
         "pagePath": "pages/cheatsheet/cheatsheet",
         "iconPath": "pages/common/log2.png",

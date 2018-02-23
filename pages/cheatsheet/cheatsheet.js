@@ -9,7 +9,11 @@ Page({
     courses: [
       { item: 'math', teacher: 'Li', time: 'am' },
       { item: 'chinese', teacher: 'Zhang', time: 'pm'},
-    ]
+    ],
+    location: {
+      latitude: '无',
+      longitude: '无'
+    },
   },
 
   /**
@@ -24,6 +28,11 @@ Page({
    */
   onReady: function () {
     console.log(/onready/)
+    var app = getCurrentPages();
+    console.log(app)
+    console.log(this)
+    var page = getApp();
+    console.log(page)
   },
 
   /**
@@ -78,6 +87,29 @@ Page({
       name: "xiaoming",
     }, function() {
       console.log(/cb/)
+    })
+  },
+  getLocation: function (e) {
+    wx.getLocation({
+      success: (res) => {
+        var latitude = res.latitude;
+        var longitude = res.longitude;
+        this.setData({
+          "location.latitude": latitude,
+          "location.longitude": longitude
+        })
+        console.log(latitude, longitude)
+      },
+    })
+  },
+  makeCall: (e) => {
+    wx.makePhoneCall({
+      phoneNumber: '15905193395'
+    })
+  },
+  openPage: () => {
+    wx.navigateTo({
+      url: '../logs/logs',
     })
   }
 })

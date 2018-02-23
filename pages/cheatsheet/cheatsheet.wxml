@@ -10,8 +10,13 @@
   <text wx:if="{{item.time == 'am'}}" class="block">teacher: {{item.teacher}}</text>
 </view>
 <template is="even" />
-<map class="map" bind:hidden='false' longitude="22" latitude="114"></map>
+<map class="map" :hidden='false' latitude='22.6' longitude='114.2'></map>
+<button bindtap="getLocation" size="mini" type="primary">获取位置</button>
+<text class='block'>纬度：{{location.latitude}}</text>
+<text class='block'>经度：{{location.longitude}}</text>
+<button class='block' bindtap='makeCall' size="mini" type="primary">打电话</button>
 </view>
+<button class='block' bindtap='openPage' size="mini" type="primary">打开页面</button>
 
 <template name="even">
   <view>template: even </view>
