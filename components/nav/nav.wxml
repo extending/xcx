@@ -1,0 +1,10 @@
+<!--components/nav/nav.wxml-->
+<view class='nav'>
+  <view class='left'>
+    <slot name="left"></slot>
+  </view>
+  <text>{{navTitle}}</text>
+  <view class='right' bindtap='test'>
+    <slot name="right"></slot>
+  </view>
+</view>

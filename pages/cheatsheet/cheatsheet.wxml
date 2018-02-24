@@ -17,6 +17,15 @@
 <button class='block' bindtap='makeCall' size="mini" type="primary">打电话</button>
 </view>
 <button class='block' bindtap='openPage' size="mini" type="primary">打开页面</button>
+<view>{{m1.message}}</view>
+<view>
+  <nav nav-title="{{title}}" bind:cbTest="cbTest">
+    <text slot='left'>left</text>
+    <text slot='right'>right</text>
+  </nav>
+</view>
+<audio poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" id="myAudio" controls loop></audio>
+
 
 <template name="even">
   <view>template: even </view>
@@ -26,3 +35,10 @@
   <view>template: odd </view>
 </template>
 
+<wxs module="m1">
+  var msg = "hellow world2";
+  module.exports.message = msg;
+
+  var tool = require("../common/add.wxs") 
+  console.log("too.add", tool.add(5, 6))
+</wxs>

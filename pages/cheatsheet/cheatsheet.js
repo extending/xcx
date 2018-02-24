@@ -14,7 +14,12 @@ Page({
       latitude: '无',
       longitude: '无'
     },
-  },
+    title: "nav title2",
+    poster: 'http://y.gtimg.cn/music/photo_new/T002R300x300M000003rsKF44GyaSk.jpg?max_age=2592000',
+    name: '此时此刻',
+    author: '许巍',
+    src: 'http://ws.stream.qqmusic.qq.com/M500001VfvsJ21xFqb.mp3?guid=ffffffff82def4af4b12b3cd9337d5e7&uin=346897220&vkey=6292F51E1E384E06DCBDC9AB7C49FD713D632D313AC4858BACB8DDD29067D3C601481D36E62053BF8DFEAF74C0A5CCFADD6471160CAF3E6A&fromtag=46',
+      },
 
   /**
    * 生命周期函数--监听页面加载
@@ -33,10 +38,10 @@ Page({
     console.log(this)
     var page = getApp();
     console.log(page)
-  },
+    },
 
   /**
-   * 生命周期函数--监听页面显示
+    生命周期函数--监听页面显示
    */
   onShow: function () {
     console.log(/onshow/)
@@ -82,9 +87,12 @@ Page({
   },
   changeName: function (e) {
     console.log(/getCurrentPages/, getCurrentPages());
-    console.log(/e/, e)
+    var _name = wx.getSystemInfoSync();
+    var _name2 = wx.getSystemInfo();
+    console.log(_name)
+    console.log(_name2)
     this.setData({
-      name: "xiaoming",
+      name: "_name",
     }, function() {
       console.log(/cb/)
     })
@@ -111,5 +119,8 @@ Page({
     wx.navigateTo({
       url: '../logs/logs',
     })
+  },
+  cbTest: () => {
+    console.log(wx.getSystemInfo())
   }
 })

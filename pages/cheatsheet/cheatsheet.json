@@ -1,5 +1,8 @@
 {
   "navigationBarTitleText": "cheatsheat",
   "navigationBarTextStyle": "white",
-  "navigationBarBackgroundColor": "#000000"
+  "navigationBarBackgroundColor": "#000000",
+  "usingComponents": {
+    "nav": "/components/nav/nav"
+  }
 }
