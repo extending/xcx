@@ -18,3 +18,7 @@
   height: 400rpx;
   margin: 40rpx 0;
 }
+
+.canvas{
+  margin: 20rpx auto;
+}

@@ -1,0 +1,9 @@
+<!--pages/leslie/leslie.wxml-->
+<canvas class="canvas" canvas-id="first" disable-scroll=true
+  bindtouchstart="bindtouchstart"
+  bindtouchmove="bindtouchmove"
+  bindtouchend="bindtouchend"
+  bindtap="bindtap"
+  bindlongpress="bindlongpress">
+  </canvas>
+<button bind:tap="madeLine">123</button>

@@ -25,8 +25,6 @@
   </nav>
 </view>
 <audio poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" id="myAudio" controls loop></audio>
-
-
 <template name="even">
   <view>template: even </view>
 </template>

@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/leslie/leslie",
     "pages/cheatsheet/cheatsheet",
     "pages/index/index",
     "pages/logs/logs",
@@ -24,6 +25,18 @@
       {
         "text": "备忘",
         "pagePath": "pages/cheatsheet/cheatsheet",
+        "iconPath": "pages/common/cheat.png",
+        "selectedIconPath": "pages/common/cheat-actived.png"
+      },
+      {
+        "text": "logs",
+        "pagePath": "pages/logs/logs",
+        "iconPath": "pages/common/log2.png",
+        "selectedIconPath": "pages/common/log2-actived.png"
+      },
+      {
+        "text": "leslie",
+        "pagePath": "pages/leslie/leslie",
         "iconPath": "pages/common/log2.png",
         "selectedIconPath": "pages/common/log2-actived.png"
       },
