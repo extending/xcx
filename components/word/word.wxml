@@ -1,2 +1,14 @@
 <!--components/word-move/word-move.wxml-->
-<text>components/word-move/word-move.wxml</text>
+<view class="container">
+  <view class="content">
+    <view class="content-word">
+      <view class="content-move">
+        <view class="world">《星球大战》系列电影是由卢卡斯电影公司出品的科幻电影。</view>
+        <view class="world">卢卡斯电影公司首先于1977年推出了《星球大战》，</view>
+        <view class="world">之后又分别在1980年和1983年推出了《星球大战2》和《星球大战3》。/view>
+          <view class="">之后又推出了《星球大战前》传系列，1、2、3分别于1999年、2002年和2005年上映。</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
