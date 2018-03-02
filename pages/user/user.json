@@ -1,4 +1,7 @@
 {
-  "navigationBarTitleText": "profile",
-  "navigationBarTextStyle": "white"
+  "navigationBarTitleText": "user",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "word": "/components/word/word"
+  }
 }

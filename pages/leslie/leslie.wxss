@@ -1,6 +1,7 @@
 /* pages/leslie/leslie.wxss */
 
 .canvas {
+  height: 500rpx;
   border: 1px solid black;
   margin: 20rpx auto;
 }

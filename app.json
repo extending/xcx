@@ -1,10 +1,10 @@
 {
   "pages": [
+    "pages/user/user",
     "pages/leslie/leslie",
     "pages/cheatsheet/cheatsheet",
     "pages/index/index",
-    "pages/logs/logs",
-    "pages/user/user"
+    "pages/logs/logs"
   ],
   "window": {
     "backgroundTextStyle": "light",

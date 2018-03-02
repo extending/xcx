@@ -6,4 +6,5 @@
   bindtap="bindtap"
   bindlongpress="bindlongpress">
   </canvas>
-<button bind:tap="madeLine">123</button>
+<button bind:tap="madeLine">创建ellipse</button>
+<button bind:tap="changeOrigin">改变origin</button>

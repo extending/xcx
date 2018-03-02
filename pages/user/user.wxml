@@ -1,2 +1,6 @@
 <!--pages/user/user.wxml-->
 <text>pages/user/user.wxml</text>
+<view>
+  <word></word>
+</view>
+
